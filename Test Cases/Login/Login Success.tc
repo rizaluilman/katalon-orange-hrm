@@ -2,15 +2,33 @@
 <TestCaseEntity>
    <description>Verify if users can login successful. 
 
-Steps:
-- Open Browser
-- Input username and password
-- Click on 'Login' button
+   Steps:
+   - Open Browser
+   - Input username and password
+   - Click on 'Login' button
 
-Expected result:
-'Dashboard' section is displayed after successful login</description>
+   Expected result:
+   'Dashboard' section is displayed after successful login</description>
    <name>Login Success</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Story: Login to Orange HRM Website
+
+   Given that the user has valid login information
+   When he logins to Orange HRM Website
+   Then he should be able to login successfully</comment>
    <testCaseGuid>a44fd7a9-f24b-4325-99ac-14693f531f04</testCaseGuid>
+   <variable>
+      <defaultValue>'Admin'</defaultValue>
+      <description></description>
+      <id></id>
+      <masked>false</masked>
+      <name>Username</name>
+   </variable>
+   <variable>
+      <defaultValue>'admin123'</defaultValue>
+      <description></description>
+      <id></id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
 </TestCaseEntity>
