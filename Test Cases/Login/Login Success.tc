@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Verify if users can login successful. 
+
+Steps:
+- Open Browser
+- Input username and password
+- Click on 'Login' button
+
+Expected result:
+'Dashboard' section is displayed after successful login</description>
    <name>Login Success</name>
    <tag></tag>
    <comment></comment>
