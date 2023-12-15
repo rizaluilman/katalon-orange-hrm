@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Verify if users login failed with wrong username or password. 
+
+   Steps:
+   - Open Browser
+   - Input wrong username and password
+   - Click on 'Login' button
+
+   Expected result:
+   show notification 'Invalid Credentials'</description>
    <name>Login Failed</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Story: Login to Orange HRM Website
+
+   Given that the user has invalid login information
+   When he logins to Orange HRM Website
+   Then he should not be able to login successfully</comment>
    <testCaseGuid>549f02ad-7336-4063-b534-9bd945470ffd</testCaseGuid>
+   <variable>
+      <defaultValue>'Admin'</defaultValue>
+      <description></description>
+      <masked>false</masked>
+      <name>Username</name>
+   </variable>
+   <variable>
+      <defaultValue>'admin'</defaultValue>
+      <description></description>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
 </TestCaseEntity>
